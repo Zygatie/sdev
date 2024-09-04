@@ -1,1 +1,15 @@
-empty for the time being, we'll organize more outside of class. This being said, how do we want to communicate? I have access to standard email, text messaging, and Discord.
+Carl - Databse management
+  input (---)
+  output (data)
+
+Joshua - Data Gathering
+  input (data)
+  output (dependents, hoursWorked, hourlyRate)
+
+Eric - Data Processing
+  input (dependents, hoursWorked, hourlyRate)
+  output (standardHours, overtimeHours, standardPay, overtimeHours, grossPay, stateTax, federalTax, dependentCost, preTaxDepCost, postTax)
+
+Rive - Output
+  input (standardHours, overtimeHours, standardPay, overtimeHours, grossPay, stateTax, federalTax, dependentCost, preTaxDepCost, postTax)
+  output (to text)
