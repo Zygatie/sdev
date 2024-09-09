@@ -1,4 +1,4 @@
-Carl - Databse management
+Carl - Database management
   input (---)
   output (data)
 
