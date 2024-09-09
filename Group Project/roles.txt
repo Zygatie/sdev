@@ -10,6 +10,6 @@ Eric - Data Processing
   input (dependents, hoursWorked, hourlyRate)
   output (standardHours, overtimeHours, standardPay, overtimeHours, grossPay, stateTax, federalTax, dependentCost, preTaxDepCost, postTax)
 
-Rive - Output
+River - Output
   input (standardHours, overtimeHours, standardPay, overtimeHours, grossPay, stateTax, federalTax, dependentCost, preTaxDepCost, postTax)
   output (to text)
