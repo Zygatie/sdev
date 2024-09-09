@@ -1,0 +1,179 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="24b40rreAn3FhF7Nqicb">
+    <mxGraphModel dx="1791" dy="1105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-1" target="wLQCVAHRWiVxPXMC30YG-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-10" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-1" value="input = dependents" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="10" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-2" target="wLQCVAHRWiVxPXMC30YG-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-2" value="input = hoursWorked" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-3" value="input = hourlyRate" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="10" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-4" value="print federalTax" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-5" value="print stateTax" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-6" value="print grossPay" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-7" value="print overtimeHours" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-8" value="print standardPay" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-9" value="print overtimeHours" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-10" value="print standardHours" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-11" value="print dependentCost" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-12" value="print preTaxDepCost" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-13" value="print postTax" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-15" value="process overtimeHours =&amp;nbsp;&lt;br&gt;hoursWorked - 40" style="shape=label;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="150" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-16" target="wLQCVAHRWiVxPXMC30YG-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-16" target="wLQCVAHRWiVxPXMC30YG-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="349.95" y="490" as="targetPoint" />
+            <mxPoint x="430.0026315789475" y="310.0526315789475" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="300" y="195" />
+              <mxPoint x="300" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-16" value="hoursWorked &amp;gt; 40?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="125" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-18" target="wLQCVAHRWiVxPXMC30YG-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-18" value="&lt;span style=&quot;background-color: initial;&quot;&gt;process preTax = grossPay + overtimePay&lt;br&gt;&lt;br&gt;process preTaxDepCost =&amp;nbsp;&lt;/span&gt;&lt;div&gt;preTax - dependentCost&lt;/div&gt;" style="shape=label;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="515" width="275" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.964;entryY=0.585;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-15" target="wLQCVAHRWiVxPXMC30YG-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="400" as="sourcePoint" />
+            <mxPoint x="500" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-29" target="wLQCVAHRWiVxPXMC30YG-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-29" value="process stateTax = grossPay * 0.056&lt;div&gt;process federalTax = grossPay * 0.079&lt;/div&gt;&lt;div&gt;process postTax = preTaxDepCost - (stateTax + federalTax)&lt;/div&gt;" style="shape=label;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="325.63" y="660" width="343.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-19" target="wLQCVAHRWiVxPXMC30YG-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-19" value="&lt;div&gt;process standardHours =&amp;nbsp;&lt;br&gt;hoursWorked - overtimeHours&lt;br&gt;process grossPay= standardHours * hourlyRate&lt;/div&gt;&lt;div&gt;process overtimePay = overtimeHours * (hourlyRate * 1.5)&lt;br&gt;&lt;/div&gt;" style="shape=label;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="380" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-39" target="wLQCVAHRWiVxPXMC30YG-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-39" value="dependentCost= &lt;br&gt;dependents * 25" style="shape=label;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="527.5" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-42" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="138" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-43" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="138" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-18" target="wLQCVAHRWiVxPXMC30YG-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="660" as="sourcePoint" />
+            <mxPoint x="740" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="568" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-49" value="output" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-50" target="wLQCVAHRWiVxPXMC30YG-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-50" value="output" style="whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="437.495" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-59" target="wLQCVAHRWiVxPXMC30YG-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-59" value="define cashBox =&lt;div&gt;1000000&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="917.5" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-60" target="wLQCVAHRWiVxPXMC30YG-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-60" value="input withrawAmount =&lt;br&gt;&quot;How much would you like to withdraw?&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="885" y="977.5" width="195" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-66" target="wLQCVAHRWiVxPXMC30YG-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-66" value="OR = &quot;Would you like this current pay check?&quot;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="416.26" y="930" width="162.5" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.026;entryY=0.501;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-66" target="wLQCVAHRWiVxPXMC30YG-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-71" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="680" y="977.5" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-72" value="output" style="whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="437.495" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-74" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-66" target="wLQCVAHRWiVxPXMC30YG-72">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="1240" as="sourcePoint" />
+            <mxPoint x="340" y="1190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="1020" />
+              <mxPoint x="360" y="1200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wLQCVAHRWiVxPXMC30YG-75" target="wLQCVAHRWiVxPXMC30YG-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-75" value="process newPaycheck =&lt;br&gt;(cashBox - withdrawAmount)&lt;br&gt;- (stateTax - federalTax) - dependentCost" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="886.25" y="1090" width="192.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wLQCVAHRWiVxPXMC30YG-77" value="output = &quot;We still taxed you sucker!&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="891.25" y="1240" width="182.5" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
