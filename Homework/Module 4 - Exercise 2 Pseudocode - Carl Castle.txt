@@ -1,0 +1,16 @@
+#This feels dangerously close to bogosort
+
+wordFind = "water"
+random = randomly flip to a word
+IF random is wordFind
+    OUTPUT ("found it on the first try!")
+ENDIF
+WHILE random IS NOT wordFind
+    IF random is before wordFind
+        random = randomly flip forward, but not further than you've ever flipped backward
+    ENDIF
+    IF random is after wordFind
+        random = randomly flip backward, but not further than you've ever flipped forward
+    ENDIF
+ENDWHILE
+OUTPUT ("I guess we must've found it somewhere")
