@@ -19,11 +19,32 @@ cur = con.cursor()
 
 inputID = input("ID to run: ")
 response = 0
-
+if int(inputID) > 10 or int(inputID) < 1:
+    inputID = "1"
 for row in cur.execute("SELECT dependents, hoursWorked, hourlyRate FROM employees WHERE id = ?", inputID):
     response = row
 dependents = row[0]
 hoursWorked = row[1]
 hourlyRate = row[2]
+
+overtimeHours = 0
+standardHours = 0
+
+if hoursWorked > 40:
+    overtimeHours = hoursWorked - 40
+    standardHours = 40
+else:
+    standardHours = hoursWorked
+
+grossPay = standardHours * hourlyRate
+overtimePay = overtimeHours * (hourlyRate * 1.5)
+dependentCost = dependents * 25
+preTax = grossPay + overtimePay
+preTaxDepCost = preTax - dependentCost
+stateTax = preTaxDepCost * 0.056
+federalTax = preTaxDepCost * 0.079
+postTax = preTaxDepCost - (stateTax + federalTax)
+
+
 
 con.close()
