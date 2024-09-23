@@ -26,9 +26,4 @@ dependents = row[0]
 hoursWorked = row[1]
 hourlyRate = row[2]
 
-
-print(dependents)
-print(hoursWorked)
-print(hourlyRate)
-
 con.close()
