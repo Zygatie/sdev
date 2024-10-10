@@ -17,34 +17,71 @@ cur = con.cursor()
 #cur.executemany("INSERT INTO employees VALUES(?, ?, ?, ?, ?, ?)", data)
 #con.commit()
 
-inputID = input("ID to run: ")
-response = 0
-if int(inputID) > 10 or int(inputID) < 1:
-    inputID = "1"
-for row in cur.execute("SELECT dependents, hoursWorked, hourlyRate FROM employees WHERE id = ?", inputID):
-    response = row
-dependents = row[0]
-hoursWorked = row[1]
-hourlyRate = row[2]
-
-overtimeHours = 0
-standardHours = 0
-
-if hoursWorked > 40:
-    overtimeHours = hoursWorked - 40
-    standardHours = 40
-else:
-    standardHours = hoursWorked
-
-grossPay = standardHours * hourlyRate
-overtimePay = overtimeHours * (hourlyRate * 1.5)
-dependentCost = dependents * 25
-preTax = grossPay + overtimePay
-preTaxDepCost = preTax - dependentCost
-stateTax = preTaxDepCost * 0.056
-federalTax = preTaxDepCost * 0.079
-postTax = preTaxDepCost - (stateTax + federalTax)
+# function to fetch data, using this to practice functions
+def fetch(input: int) : # used placeholders to prevent SQL injection
+        for row in cur.execute("SELECT dependents, hoursWorked, hourlyRate FROM employees WHERE id = ?", (inputID,)): #the (inputID,) is used to denote it as one character, whereas previously '10' was read as '1', '0' 
+            response = row
+        return response
 
 
+inputID = 1 # this number also acts as our sentinel, this will be changed on first use
+while inputID != 0:
+    inputID = input("\nInput Employee ID to Generate Stub, or Enter 0 to Exit: ")
+    response = 0
+    if inputID.isalpha(): # check if the user input a letter instead of number
+        print("\nPlease enter a number next time, exiting")
+        break
+    if int(inputID) == 0: # check if the user input the exit character
+        print("\nThank you for using this program!")
+        break
+
+    if inputID.isnumeric(): # check to be sure the user entered an integer
+        row = fetch(inputID)
+    else:
+        row = [0, 0, 0] # in case something goes horribly wrong, this is a fallback
+
+    if int(inputID) > 10 or int(inputID) < 0: # check to be sure the user-entered integer is within range
+        print("\nYou have input an invalid ID, exiting")
+        break
+    
+    dependents = row[0]
+    hoursWorked = row[1]
+    hourlyRate = row[2]
+
+    overtimeHours = 0
+    standardHours = 0
+    overtimeRaiseConcern = 0
+
+    if hoursWorked > 40:
+        overtimeHours = hoursWorked - 40
+        standardHours = 40
+        overtimeRaiseConcern = 1 # bring up the hours being over 40
+    else:
+        standardHours = hoursWorked
+
+    grossPay = standardHours * hourlyRate
+    overtimePay = overtimeHours * (hourlyRate * 1.5)
+    dependentCost = dependents * 25
+    preTax = grossPay + overtimePay
+    preTaxDepCost = preTax - dependentCost
+    stateTax = preTaxDepCost * 0.056
+    federalTax = preTaxDepCost * 0.079
+    postTax = preTaxDepCost - (stateTax + federalTax)
+
+    print("")
+    if overtimeRaiseConcern == 1:
+        print("This employee worked more than 40 hours this week.\n") # make EXCEPTIONALLY CLEAR that the user worked over 40 hours
+    print("Hours Worked: " + str(hoursWorked))
+    print("Hourly Rate: " + str(hourlyRate))
+    print("Standard Hours Worked: " + str(standardHours))
+    print("Overtime Hours Worked: " + str(overtimeHours))
+    print("Standard Pay: " + str(round(grossPay, 2)))
+    print("Overtime Pay: " + str(round(overtimePay, 2)))
+    print("State Tax: " + str(round(stateTax, 2)))
+    print("Federal Tax: " + str(round(federalTax, 2)))
+    print("Dependent Cost: " + str(dependentCost))
+    print("Pre-Tax Dependents Included: " + str(round(preTaxDepCost, 2)))
+    print("\tPost-Tax: " + str(round(postTax, 2)))
+    inputID = int(inputID)
 
 con.close()
