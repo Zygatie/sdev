@@ -28,21 +28,24 @@ inputID = 1 # this number also acts as our sentinel, this will be changed on fir
 while inputID != 0:
     inputID = input("\nInput Employee ID to Generate Stub, or Enter 0 to Exit: ")
     response = 0
+    if inputID == "":
+        print("\nNo Input Found, exiting")
+        break
     if inputID.isalpha(): # check if the user input a letter instead of number
         print("\nPlease enter a number next time, exiting")
         break
     if int(inputID) == 0: # check if the user input the exit character
         print("\nThank you for using this program!")
         break
-
+    if int(inputID) > 10 or int(inputID) < 0: # check to be sure the user-entered integer is within range
+        print("\nYou have input an invalid ID, exiting")
+        break
     if inputID.isnumeric(): # check to be sure the user entered an integer
         row = fetch(inputID)
     else:
         row = [0, 0, 0] # in case something goes horribly wrong, this is a fallback
 
-    if int(inputID) > 10 or int(inputID) < 0: # check to be sure the user-entered integer is within range
-        print("\nYou have input an invalid ID, exiting")
-        break
+    
     
     dependents = row[0]
     hoursWorked = row[1]
